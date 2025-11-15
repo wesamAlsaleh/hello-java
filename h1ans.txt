@@ -1,6 +1,30 @@
 this is homework one answer
 
 ## Feature:
-
+- Download posts on Instagram.
 
 ## User stories:
+- As a user, I want to download my own posts so that I can save a copy on my devices.
+
+* Given that I open one of my posts, when I tap the download button in the post options then the post should be saved in my device.
+* Given that my device does not have storage permissions, when I press the download button then the app should ask me to grant storage permission.
+
+- As a user, I want to download other people posts so that I can save whatever I like.
+
+* Given that I open someone else post, when I tap the download button then the post should be saved in my device.
+* Given that a user has downloaded someone else post, when the media has downloaded successfully then it should contain a watermark to prevent copyrighting.
+
+- As a user, I want to disable the downloading option or limit the download of my posts to my followers only so that I can control the privacy and use of my content.
+
+* Given that a user has disabled the download option, when any user tries to download a content from his account then the download button should be disabled.
+* Given that a user that does not follow me, when they open one of my posts then the download button should be disabled.
+
+- As a user, I want to choose the quality of the post before I confirm the download so that I can manage media storage size and download speed.
+
+* Given that I tap the download button on any post, when the quality menu appears then I can select one of the quality options (1080, 720, etc...)
+* Given that I selected a quality option, when I press the confirm download button then the system should download the media based in the selected quality.
+
+- As a user, I want my download requests to be queued when I'm offline so that the download can start automatically started when I reconnect.
+
+* Given that the user is offline, when they press download on the last seen posts while they are online then the system should save the request and wait until there is an internet.
+* Given that the user reconnects to the internet, when the system checks the queue then it should automatically start downloading the pending requests.
